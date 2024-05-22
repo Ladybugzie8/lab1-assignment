@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Pay Calculator</title>
+</head>
+<body>
+    <h1>Weekly Pay Calculator</h1>
+    <form action="calculate_pay.php" method="post">
+        <label for="hourly_wage">Hourly Wage ($):</label>
+        <input type="number" id="hourly_wage" name="hourly_wage" step="0.01" required><br><br>
+
+        <label for="hours_worked">Hours Worked This Week:</label>
+        <input type="number" id="hours_worked" name="hours_worked" step="0.1" required><br><br>
+
+        <label for="tax_rate">Estimated Tax Rate (%):</label>
+        <input type="number" id="tax_rate" name="tax_rate" step="0.1" required><br><br>
+
+        <input type="submit" value="Calculate Pay">
+    </form>
+</body>
+</html>
